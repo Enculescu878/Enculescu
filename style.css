@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: monospace;
+    font-size:18px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+ul{
+    list-style: none;
+}
+
+/* HEADER FIXED */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(54, 139, 82);
+    text-align: center;
+    padding: 1.2em 0;
+    z-index: 100;
+}
+header h1::before{
+    content: '⚽';
+}
+header h1::after{
+    content: '⚽';
+}
+
+/* COMPENSARE HEADER */
+main{
+    padding-top: 90px; /* înălțimea header-ului */
+}
+
+/* HERO */
+.hero{
+    position:relative;
+    background-color: rgb(69, 146, 69);
+    width: 100%;
+}
+
+.hero figure img{
+    width: 100%;
+    display: block;
+}
+
+/* TEXT HERO – CORECT */
+
+
+ .text-hero2{
+     position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50%;
+    height:fit-content;
+    text-align: center;
+    color: rgb(14, 14, 15);
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+    border-radius: 10px;
+}
+
+/* BLOG */
+.blog{
+    width:100%;
+    background-color: antiquewhite;
+    padding: 1em;
+}
+
+.blog article{
+    width:80%;
+    margin: 0.8em auto;
+    padding: 0.8em;
+    border: 1px solid rgb(54, 139, 82);
+    border-radius: 10px;
+}
+
+/* CODING LANGUAGES */
+.coding{
+    background-color:rgb(55, 107, 61);
+    color:rgb(244, 245, 251);
+    padding: 1em;
+}
+
+.list-coding{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1em;
+}
+
+.coding-group{
+    border: 2px solid rgb(15, 15, 16);
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.coding-group ul{
+    list-style: circle;
+    margin-left: 1em;
+}
+
+.coding-group h3{
+    position:sticky;
+    top: 160px;
+    background-color: rgb(251, 253, 253);
+    color:rgb(56, 175, 46);
+    padding:5px;
+    margin-bottom: 1em;
+}
+
+/* FOOTER */
+footer{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(248, 242, 242);
+    color: rgb(62, 117, 62);
+     padding: 2em;}
